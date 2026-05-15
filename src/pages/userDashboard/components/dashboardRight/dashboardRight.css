@@ -1,0 +1,12 @@
+.dashboard-right{
+    height:100vh;
+    width:calc(100vw - 350px);
+    position:relative;
+    left:350px;
+}
+@media(max-width:1200px){
+    .dashboard-right{
+        left:0px;
+        width:100vw;
+    }
+}

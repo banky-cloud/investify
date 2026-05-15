@@ -1,0 +1,254 @@
+.deposit-page-con{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    background-color: rgb(10, 12, 22);
+    color:white;
+
+}
+    .deposit-left-con,.deposit-right-con{
+    flex:1;
+}
+.deposit-left-con{
+    position:relative;
+}
+.deposit-right-con{
+    padding-top:100px;
+}
+.network-btns{
+    margin:20px 0;
+    border-bottom:1px solid rgb(255,255,255,0.5);
+    border-top:1px solid rgb(255,255,255,0.5);
+}
+
+#deposit-logo{
+    color:white;
+    margin:40px auto;
+    /* text-align:center; */ 
+    margin: 20px;
+    font-size:25px;
+    letter-spacing: 1.5px;
+}
+.deposit-sidebar-links{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    margin-top:60px;
+    
+}
+option:hover{
+    background-color: black;
+}
+.deposit-sidebar-link{
+    color:gray;
+    text-transform:capitalize;
+    text-decoration:none;
+    font-weight:bold;
+
+    height: 45px;
+    display: flex;
+    gap:20px;
+    align-items:center;
+    width:200px;
+    margin-left:20px;
+    border-radius:10px;
+}
+.highlighted{
+    background-color: rgb(36, 180, 108);
+    color:white;
+}
+.deposit-logout-btn{
+    align-self: end;
+    cursor:pointer;
+    position:absolute;
+    bottom:50px;
+    margin-left:30px;
+}
+.deposit-center{
+    flex:3;
+    padding-top:60px;
+    padding-left: 60px;
+}
+.deposit{
+    margin:30px 0px;
+}
+.deposit-type-btns{
+    display:flex;
+    margin-bottom: 25px;
+}
+.deposit-type-btn{
+    height:40px;
+    color:white;
+    background-color:transparent;
+    width:100px;
+    border: none;
+    border-radius:10px;
+    transition: all 1s ease;
+}
+.active-deposit-type{
+    background-color: rgb(36, 180, 108);
+    
+
+}
+.input-maybe{
+    display:flex;
+    height:40px;
+    width:80%;
+
+    border: 1px solid rgb(255,255,255) ;
+}
+
+.address-con{
+    margin-top:50px;
+    border: 1px solid rgb(255,255,255) ;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:20px;
+
+}
+.address-copy-btn{
+    height:100%;
+    width:100px;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+.network-selector-btn{
+background-color: rgb(25, 25, 27);
+color:white;
+padding:5px;
+text-transform:capitalize;
+width:70px;
+border:none
+}
+.deposit-borderless-con{
+    border:none;
+    padding-left:0px;
+}
+
+.network-btns{
+    display: flex;
+    gap:6px;
+}
+.qrcode{
+    width:90%;
+}
+.deposit-ham{
+     position:absolute;
+     cursor:pointer;
+     height:40px; 
+     width:40px;
+     right:10px;
+     top:40px;
+     z-index:5;
+     gap:6px;
+     display: flex;
+     flex-direction:column;
+}
+.deposit-ham-line{
+    height:3px;
+     background-color:white;
+     width:30px;
+     transition:all 0.5s ease;
+
+
+}
+.proof-label{
+    margin-top:15px;
+}
+.ham-top{
+    transform:rotate(45deg);
+    position:absolute;
+}
+
+.ham-bottom{
+    transform:rotate(-45deg);
+    position:absolute;
+
+}
+.deposit-responsive-nav{
+    height:100vh;
+    width:100vw;
+    background-color:rgb(255, 255, 255);
+    position:absolute;
+    z-index:2;
+    left:0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    transition: all 0.5s ease;
+    display: none;
+    
+
+
+
+}
+.relative{
+        position:relative;
+        bottom:120px;
+    }
+    .down-label{
+        position:relative;
+        top:40px;
+    }
+
+@media (max-width:970px){
+    .deposit-left-con{
+        display:none;
+    }
+    .deposit-page-con{
+        flex-direction:column-reverse;
+        height:100vh;
+        padding-top:5px;
+        
+    }
+    .deposit-responsive-nav{
+        display:flex;
+    }
+    #address{
+        font-size:13px;
+        font-weight:bold;
+        
+        margin-left:5px;
+    }
+    
+    .qrcode{
+        width:300px;
+        margin:20px auto;
+        display:block;
+        display: none;
+    }
+    .deposit-center{
+        padding-top:0px;
+        position:relative;
+        bottom:30px;
+        padding-left:10px;
+    }
+    .address-con{
+        font-size:16px;
+        padding-left: 0;
+    }
+    .deposit-type-btns{
+        display:none;
+    }
+    .deposit-right-con{
+        padding-top:150px;
+        width:100vw;
+    
+    }
+    .deposit-copy-btn{
+        font-size:17px;
+    }
+
+}
+@media (min-width:971px){
+    .deposit-ham{
+        display:none
+    }
+}

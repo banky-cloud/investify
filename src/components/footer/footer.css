@@ -1,0 +1,157 @@
+.investify-footer{
+  background:#020617;
+  color:white;
+  padding:80px 20px 40px;
+}
+
+
+/* Newsletter */
+
+.newsletter-card{
+  max-width:900px;
+  margin:auto;
+  padding:50px;
+  text-align:center;
+  border-radius:18px;
+
+  background:linear-gradient(135deg,#0f172a,#020617);
+  border:1px solid rgba(255,255,255,0.1);
+
+  margin-bottom:70px;
+}
+
+.newsletter-card h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.newsletter-card p{
+  opacity:.7;
+  margin-bottom:25px;
+}
+
+.newsletter-form{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.newsletter-form input{
+  padding:14px 16px;
+  width:260px;
+  border-radius:8px;
+  border:none;
+}
+
+.newsletter-form button{
+  padding:14px 20px;
+  border:none;
+  border-radius:8px;
+
+  background:linear-gradient(90deg,#06b6d4,#3b82f6);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+
+
+/* Footer grid */
+
+.footer-grid{
+  max-width:1200px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:40px;
+}
+
+.footer-brand h3{
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.footer-brand p{
+  opacity:.7;
+  line-height:1.6;
+}
+
+.footer-col h4{
+  margin-bottom:12px;
+}
+
+.footer-col a{
+  display:block;
+  text-decoration:none;
+  color:white;
+  opacity:.7;
+  margin-bottom:8px;
+  transition:0.2s;
+}
+
+.footer-col a:hover{
+  opacity:1;
+  transform:translateX(4px);
+}
+
+
+/* Bottom */
+
+.footer-bottom{
+  max-width:1200px;
+  margin:60px auto 0;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding-top:20px;
+}
+
+.footer-bottom p{
+  opacity:.6;
+}
+
+.socials a{
+  margin-left:15px;
+  text-decoration:none;
+  color:white;
+  opacity:.7;
+}
+
+.socials a:hover{
+  opacity:1;
+}
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.footer-grid{
+  grid-template-columns:1fr 1fr;
+}
+
+.footer-bottom{
+  flex-direction:column;
+  gap:15px;
+}
+
+}
+
+@media(max-width:600px){
+
+.newsletter-form{
+  flex-direction:column;
+}
+
+.newsletter-form input{
+  width:100%;
+}
+
+.footer-grid{
+  grid-template-columns:1fr;
+}
+
+}

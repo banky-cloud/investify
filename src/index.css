@@ -1,0 +1,22 @@
+:root{
+    --secondary-color:rgb(73, 103, 158);
+    --primary-color:#161616;
+    --tet-color:rgb(243, 124, 14);
+}
+body{
+    overflow-x:hidden;
+    width:100vw;
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    cursor: url("/cursor.png") 16 16, auto;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}

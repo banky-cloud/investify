@@ -1,0 +1,13 @@
+.investment-con{
+    background:linear-gradient(135deg,#020617,#0f172a);
+    width:100vw
+}
+.invest-inp-and-btn{
+    width:500px;
+    margin:0 auto;
+}
+@media(max-width:600px){
+.invest-inp-and-btn{
+    width:80vw;
+}
+}
